@@ -1,0 +1,41 @@
+[ 2024-07-06 02:00:06,186 ] 23 root - INFO - Logger has been configured and is working properly.
+[ 2024-07-06 02:00:11,138 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-07-06 02:00:11,145 ] 97 werkzeug - INFO -  * Debugger PIN: 597-376-328
+[ 2024-07-06 02:00:17,785 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:00:17] "GET / HTTP/1.1" 200 -
+[ 2024-07-06 02:00:22,739 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:00:22] "GET /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:00:22,921 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:00:22] "[33mGET /icons8-favicon-64.png HTTP/1.1[0m" 404 -
+[ 2024-07-06 02:00:27,594 ] 105 root - INFO - Dataframe Gathered
+[ 2024-07-06 02:00:28,038 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:00:28] "POST /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:01:14,017 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:01:14] "GET / HTTP/1.1" 200 -
+[ 2024-07-06 02:01:19,009 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:01:19] "GET /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:02:41,385 ] 105 root - INFO - Dataframe Gathered
+[ 2024-07-06 02:02:41,433 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:02:41] "POST /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:03:04,436 ] 105 root - INFO - Dataframe Gathered
+[ 2024-07-06 02:03:04,459 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:03:04] "POST /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:03:14,074 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:03:14] "GET /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:03:40,922 ] 105 root - INFO - Dataframe Gathered
+[ 2024-07-06 02:03:40,950 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:03:40] "POST /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:07:01,666 ] 105 root - INFO - Dataframe Gathered
+[ 2024-07-06 02:07:01,693 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:07:01] "POST /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:07:04,646 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:07:04] "[33mGET /index.html HTTP/1.1[0m" 404 -
+[ 2024-07-06 02:07:13,155 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:07:13] "[33mGET /index.html HTTP/1.1[0m" 404 -
+[ 2024-07-06 02:07:58,318 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:07:58] "GET /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:08:03,116 ] 105 root - INFO - Dataframe Gathered
+[ 2024-07-06 02:08:03,151 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:08:03] "POST /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:10:14,530 ] 105 root - INFO - Dataframe Gathered
+[ 2024-07-06 02:10:14,581 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:10:14] "POST /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:10:16,352 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:10:16] "[33mGET /form.html HTTP/1.1[0m" 404 -
+[ 2024-07-06 02:13:10,118 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:13:10] "GET /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:13:15,299 ] 105 root - INFO - Dataframe Gathered
+[ 2024-07-06 02:13:15,326 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:13:15] "POST /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:13:17,418 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:13:17] "[33mGET /templates/form.html HTTP/1.1[0m" 404 -
+[ 2024-07-06 02:13:20,283 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:13:20] "[33mGET /templates/form.html HTTP/1.1[0m" 404 -
+[ 2024-07-06 02:15:59,361 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:15:59] "[33mGET /templates/form.html HTTP/1.1[0m" 404 -
+[ 2024-07-06 02:16:00,878 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:16:00] "[33mGET /templates/form.html HTTP/1.1[0m" 404 -
+[ 2024-07-06 02:16:05,631 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:16:05] "GET / HTTP/1.1" 200 -
+[ 2024-07-06 02:16:13,190 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:16:13] "GET /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:16:18,394 ] 105 root - INFO - Dataframe Gathered
+[ 2024-07-06 02:16:18,425 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:16:18] "POST /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:16:20,875 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:16:20] "GET /predict HTTP/1.1" 200 -
+[ 2024-07-06 02:16:23,644 ] 105 root - INFO - Dataframe Gathered
+[ 2024-07-06 02:16:23,664 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 02:16:23] "POST /predict HTTP/1.1" 200 -

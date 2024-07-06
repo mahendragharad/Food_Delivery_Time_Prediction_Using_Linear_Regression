@@ -1,0 +1,29 @@
+[ 2024-07-04 22:46:12,291 ] 23 root - INFO - Logger has been configured and is working properly.
+[ 2024-07-04 22:46:17,121 ] 27 root - INFO - Data ingestion methods starts
+[ 2024-07-04 22:46:17,333 ] 31 root - INFO - Dataset read as pandas dataframe
+[ 2024-07-04 22:46:17,333 ] 33 root - INFO - Making directory path to save our raw data file
+[ 2024-07-04 22:46:17,334 ] 35 root - INFO - raw data path created successfully
+[ 2024-07-04 22:46:17,335 ] 37 root - INFO - converting our raw data file into df and saving it to the raw file directory
+[ 2024-07-04 22:46:18,138 ] 40 root - INFO - Let's Do the train test split
+[ 2024-07-04 22:46:19,053 ] 46 root - INFO - Data Ingestion Step Completed
+[ 2024-07-04 22:46:19,238 ] 78 root - INFO - Read train and test data Completed
+[ 2024-07-04 22:46:19,253 ] 79 root - INFO - Train dataframe head : 
+        ID Delivery_person_ID  Delivery_person_Age  Delivery_person_Ratings  Restaurant_latitude  Restaurant_longitude  Delivery_location_latitude  Delivery_location_longitude  Order_Date Time_Orderd Time_Order_picked Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order   Type_of_vehicle  multiple_deliveries Festival           City  Time_taken (min)
+0  0xb6c1     PUNERES07DEL01                 20.0                      4.7            18.546947             73.900626                   18.586947                    73.940626  30-03-2022       14:15             14:25             Stormy                 High                  2          Meal  electric_scooter                  1.0       No          Urban                15
+1  0x7f55      VADRES17DEL03                 24.0                      4.8             0.000000              0.000000                    0.030000                     0.030000  09-03-2022       18:30             18:45         Sandstorms               Medium                  1        Drinks           scooter                  1.0       No  Metropolitian                28
+2   0x7a8      JAPRES16DEL01                 29.0                      4.8            26.849596             75.800512                   26.889596                    75.840512  03-04-2022       16:55       0.708333333             Stormy               Medium                  2        Drinks           scooter                  0.0       No          Urban                20
+3  0x17af    COIMBRES19DEL01                 37.0                      4.8            11.022298             76.998349                   11.032298                    77.008349  19-03-2022       11:45             11:50                Fog                 High                  1         Snack           scooter                  1.0       No  Metropolitian                27
+4  0xbfdc     DEHRES010DEL03                 35.0                      4.9            30.328174             78.049117                   30.358174                    78.079117  11-02-2022       20:45             0.875             Stormy                  Jam                  1        Drinks        motorcycle                  1.0       No  Metropolitian                26
+[ 2024-07-04 22:46:19,263 ] 80 root - INFO - Test dataframe head : 
+        ID Delivery_person_ID  Delivery_person_Age  Delivery_person_Ratings  Restaurant_latitude  Restaurant_longitude  Delivery_location_latitude  Delivery_location_longitude  Order_Date Time_Orderd Time_Order_picked Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order   Type_of_vehicle  multiple_deliveries Festival           City  Time_taken (min)
+0  0xb6c1     PUNERES07DEL01                 20.0                      4.7            18.546947             73.900626                   18.586947                    73.940626  30-03-2022       14:15             14:25             Stormy                 High                  2          Meal  electric_scooter                  1.0       No          Urban                15
+1  0x7f55      VADRES17DEL03                 24.0                      4.8             0.000000              0.000000                    0.030000                     0.030000  09-03-2022       18:30             18:45         Sandstorms               Medium                  1        Drinks           scooter                  1.0       No  Metropolitian                28
+2   0x7a8      JAPRES16DEL01                 29.0                      4.8            26.849596             75.800512                   26.889596                    75.840512  03-04-2022       16:55       0.708333333             Stormy               Medium                  2        Drinks           scooter                  0.0       No          Urban                20
+3  0x17af    COIMBRES19DEL01                 37.0                      4.8            11.022298             76.998349                   11.032298                    77.008349  19-03-2022       11:45             11:50                Fog                 High                  1         Snack           scooter                  1.0       No  Metropolitian                27
+4  0xbfdc     DEHRES010DEL03                 35.0                      4.9            30.328174             78.049117                   30.358174                    78.079117  11-02-2022       20:45             0.875             Stormy                  Jam                  1        Drinks        motorcycle                  1.0       No  Metropolitian                26
+[ 2024-07-04 22:46:19,263 ] 82 root - INFO - Obtaining preprocessing object
+[ 2024-07-04 22:46:19,264 ] 24 root - INFO - Data Transformation Initiated
+[ 2024-07-04 22:46:19,512 ] 34 root - INFO - Pipeline Initiated
+[ 2024-07-04 22:46:19,512 ] 65 root - INFO - Pipeline Completed
+[ 2024-07-04 22:46:19,526 ] 95 root - INFO - Applying preprocessing object on training and testing datasets
+[ 2024-07-04 22:46:19,527 ] 116 root - INFO - Error Occured in Initiate Data Transformation

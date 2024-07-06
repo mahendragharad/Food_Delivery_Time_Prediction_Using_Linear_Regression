@@ -1,0 +1,29 @@
+[ 2024-07-04 22:59:29,167 ] 23 root - INFO - Logger has been configured and is working properly.
+[ 2024-07-04 22:59:34,941 ] 27 root - INFO - Data ingestion methods starts
+[ 2024-07-04 22:59:35,154 ] 31 root - INFO - Dataset read as pandas dataframe
+[ 2024-07-04 22:59:35,154 ] 33 root - INFO - Making directory path to save our raw data file
+[ 2024-07-04 22:59:35,155 ] 35 root - INFO - raw data path created successfully
+[ 2024-07-04 22:59:35,155 ] 37 root - INFO - converting our raw data file into df and saving it to the raw file directory
+[ 2024-07-04 22:59:35,982 ] 40 root - INFO - Let's Do the train test split
+[ 2024-07-04 22:59:36,959 ] 46 root - INFO - Data Ingestion Step Completed
+[ 2024-07-04 22:59:37,304 ] 78 root - INFO - Read train and test data Completed
+[ 2024-07-04 22:59:37,317 ] 79 root - INFO - Train dataframe head: 
+        ID Delivery_person_ID  Delivery_person_Age  Delivery_person_Ratings  Restaurant_latitude  Restaurant_longitude  Delivery_location_latitude  Delivery_location_longitude  Order_Date Time_Orderd Time_Order_picked Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order Type_of_vehicle  multiple_deliveries Festival           City  Time_taken (min)
+0  0x2053     PUNERES13DEL02                 23.0                      4.5            18.562450             73.916619                   18.692450                    74.046619  20-03-2022       23:45                 1             Stormy                  Low                  0          Meal      motorcycle                  0.0       No  Metropolitian                24
+1  0xd9eb     DEHRES010DEL01                 21.0                      4.6            30.328174             78.049117                   30.438174                    78.159117  12-02-2022       23:30             23:35             Cloudy                  Low                  0        Drinks      motorcycle                  1.0       No  Metropolitian                23
+2  0x54f4     CHENRES19DEL02                 35.0                      5.0            12.986047             80.218114                   13.006047                    80.238114  05-03-2022         0.5             12:10             Cloudy                 High                  0        Buffet      motorcycle                  1.0       No  Metropolitian                26
+3  0x3c74      VADRES18DEL03                 21.0                      4.9             0.000000              0.000000                    0.090000                     0.090000  10-03-2022       18:55       0.791666667              Windy               Medium                  2        Buffet         scooter                  1.0       No  Metropolitian                21
+4  0x2169      HYDRES04DEL01                 22.0                      4.4            17.411028             78.329645                   17.451028                    78.369645  19-03-2022       0.625             15:05             Stormy                 High                  0        Drinks      motorcycle                  1.0      Yes          Urban                39
+[ 2024-07-04 22:59:37,327 ] 80 root - INFO - Test dataframe head: 
+        ID Delivery_person_ID  Delivery_person_Age  Delivery_person_Ratings  Restaurant_latitude  Restaurant_longitude  Delivery_location_latitude  Delivery_location_longitude  Order_Date Time_Orderd Time_Order_picked Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order Type_of_vehicle  multiple_deliveries Festival           City  Time_taken (min)
+0  0x2053     PUNERES13DEL02                 23.0                      4.5            18.562450             73.916619                   18.692450                    74.046619  20-03-2022       23:45                 1             Stormy                  Low                  0          Meal      motorcycle                  0.0       No  Metropolitian                24
+1  0xd9eb     DEHRES010DEL01                 21.0                      4.6            30.328174             78.049117                   30.438174                    78.159117  12-02-2022       23:30             23:35             Cloudy                  Low                  0        Drinks      motorcycle                  1.0       No  Metropolitian                23
+2  0x54f4     CHENRES19DEL02                 35.0                      5.0            12.986047             80.218114                   13.006047                    80.238114  05-03-2022         0.5             12:10             Cloudy                 High                  0        Buffet      motorcycle                  1.0       No  Metropolitian                26
+3  0x3c74      VADRES18DEL03                 21.0                      4.9             0.000000              0.000000                    0.090000                     0.090000  10-03-2022       18:55       0.791666667              Windy               Medium                  2        Buffet         scooter                  1.0       No  Metropolitian                21
+4  0x2169      HYDRES04DEL01                 22.0                      4.4            17.411028             78.329645                   17.451028                    78.369645  19-03-2022       0.625             15:05             Stormy                 High                  0        Drinks      motorcycle                  1.0      Yes          Urban                39
+[ 2024-07-04 22:59:37,327 ] 82 root - INFO - Obtaining preprocessing object
+[ 2024-07-04 22:59:37,328 ] 24 root - INFO - Data Transformation Initiated
+[ 2024-07-04 22:59:37,595 ] 34 root - INFO - Pipeline Initiated
+[ 2024-07-04 22:59:37,596 ] 65 root - INFO - Pipeline Completed
+[ 2024-07-04 22:59:37,614 ] 102 root - INFO - Applying preprocessing object on training and testing datasets
+[ 2024-07-04 22:59:37,616 ] 123 root - INFO - Error Occurred in Initiate Data Transformation

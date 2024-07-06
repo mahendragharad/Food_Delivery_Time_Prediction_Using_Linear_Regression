@@ -1,0 +1,5 @@
+[ 2024-07-06 00:29:28,994 ] 23 root - INFO - Logger has been configured and is working properly.
+[ 2024-07-06 00:29:33,801 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-07-06 00:29:33,808 ] 97 werkzeug - INFO -  * Debugger PIN: 597-376-328
+[ 2024-07-06 00:29:44,176 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 00:29:44] "GET / HTTP/1.1" 200 -
+[ 2024-07-06 00:30:00,564 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 00:30:00] "GET /predict HTTP/1.1" 200 -

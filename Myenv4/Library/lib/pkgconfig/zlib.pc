@@ -1,0 +1,13 @@
+prefix=C:/Projects/ALL_Data_SCIENCE_Projects/Food_Delivery_Time_Prediction/Myenv4/Library
+exec_prefix=C:/Projects/ALL_Data_SCIENCE_Projects/Food_Delivery_Time_Prediction/Myenv4/Library
+libdir=C:/Projects/ALL_Data_SCIENCE_Projects/Food_Delivery_Time_Prediction/Myenv4/Library/lib
+sharedlibdir=C:/Projects/ALL_Data_SCIENCE_Projects/Food_Delivery_Time_Prediction/Myenv4/Library/lib
+includedir=C:/Projects/ALL_Data_SCIENCE_Projects/Food_Delivery_Time_Prediction/Myenv4/Library/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

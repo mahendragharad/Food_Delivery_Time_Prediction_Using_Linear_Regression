@@ -1,0 +1,5 @@
+[ 2024-07-06 00:27:12,706 ] 23 root - INFO - Logger has been configured and is working properly.
+[ 2024-07-06 00:27:17,283 ] 97 werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[ 2024-07-06 00:27:17,284 ] 97 werkzeug - INFO - [33mPress CTRL+C to quit[0m
+[ 2024-07-06 00:27:17,290 ] 97 werkzeug - INFO -  * Restarting with stat

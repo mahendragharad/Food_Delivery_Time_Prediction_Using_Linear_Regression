@@ -1,0 +1,29 @@
+[ 2024-07-05 00:26:03,174 ] 23 root - INFO - Logger has been configured and is working properly.
+[ 2024-07-05 00:26:16,840 ] 27 root - INFO - Data ingestion methods starts
+[ 2024-07-05 00:26:17,037 ] 31 root - INFO - Dataset read as pandas dataframe
+[ 2024-07-05 00:26:17,037 ] 33 root - INFO - Making directory path to save our raw data file
+[ 2024-07-05 00:26:17,038 ] 35 root - INFO - raw data path created successfully
+[ 2024-07-05 00:26:17,038 ] 37 root - INFO - converting our raw data file into df and saving it to the raw file directory
+[ 2024-07-05 00:26:17,808 ] 40 root - INFO - Let's Do the train test split
+[ 2024-07-05 00:26:18,625 ] 46 root - INFO - Data Ingestion Step Completed
+[ 2024-07-05 00:26:18,854 ] 78 root - INFO - Read train and test data Completed
+[ 2024-07-05 00:26:18,866 ] 79 root - INFO - Train dataframe head: 
+    Delivery_person_Age  Delivery_person_Ratings  Restaurant_latitude  Restaurant_longitude  Delivery_location_latitude  Delivery_location_longitude Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order Type_of_vehicle  multiple_deliveries Festival           City  Day  Month  Year  orderd_hours  orderd_minutes  picked_hours  picked_minutes  Delivery_time
+0                 35.0                      4.8            10.994136             76.963303                   11.084136                    77.053303             Cloudy                  Jam                  2        Buffet      motorcycle                  1.0       No  Metropolitian    4      4  2022            20              25            20              40             43
+1                  NaN                      NaN            22.577821             88.400581                   22.637821                    88.460581             Cloudy                  Jam                  1        Buffet      motorcycle                  0.0       No  Metropolitian   11      2  2022            18              31            21               0             32
+2                 25.0                      4.8            21.186608             72.794136                   21.196608                    72.804136             Stormy                 High                  2         Snack      motorcycle                  0.0       No  Metropolitian   15      3  2022            11              55            12               0             27
+3                 37.0                      3.7            26.888420             75.800689                   27.018420                    75.930689         Sandstorms                  Jam                  1        Drinks         scooter                  1.0       No  Metropolitian    8      3  2022            21              40            21              55             37
+4                 36.0                      4.6            21.173343             72.792731                   21.183343                    72.802731             Cloudy                 High                  1        Buffet         scooter                  1.0       No  Metropolitian    1      3  2022            11              25            11              30             28
+[ 2024-07-05 00:26:18,874 ] 80 root - INFO - Test dataframe head: 
+    Delivery_person_Age  Delivery_person_Ratings  Restaurant_latitude  Restaurant_longitude  Delivery_location_latitude  Delivery_location_longitude Weather_conditions Road_traffic_density  Vehicle_condition Type_of_order Type_of_vehicle  multiple_deliveries Festival           City  Day  Month  Year  orderd_hours  orderd_minutes  picked_hours  picked_minutes  Delivery_time
+0                 36.0                      4.5            23.354422             85.332900                   23.484422                    85.462900             Stormy                  Jam                  1         Snack         scooter                  1.0       No  Metropolitian   16      3  2022            20              15            20              25             33
+1                 31.0                      4.6            12.979166             77.640709                   13.089166                    77.750709              Windy                  Low                  2        Buffet      motorcycle                  0.0       No          Urban   20      3  2022            22              40            22              45             26
+2                 25.0                      4.7            23.357804             85.325146                   23.407804                    85.375146                Fog                  Low                  2        Drinks         scooter                  1.0       No  Metropolitian    5      3  2022            22              40            22              45             11
+3                 31.0                      4.1            12.972161             77.596014                   13.052161                    77.676014              Sunny                  Jam                  2        Buffet      motorcycle                  2.0       No  Metropolitian   29      3  2022            19              30            19              35             34
+4                 30.0                      4.6            22.753839             75.897429                   22.813838                    75.957429                Fog                  Low                  2        Buffet         scooter                  1.0       No          Urban   26      3  2022            22              15            22              25             16
+[ 2024-07-05 00:26:18,875 ] 82 root - INFO - Obtaining preprocessing object
+[ 2024-07-05 00:26:18,875 ] 24 root - INFO - Data Transformation Initiated
+[ 2024-07-05 00:26:19,080 ] 34 root - INFO - Pipeline Initiated
+[ 2024-07-05 00:26:19,081 ] 65 root - INFO - Pipeline Completed
+[ 2024-07-05 00:26:19,095 ] 94 root - INFO - Applying preprocessing object on training and testing datasets
+[ 2024-07-05 00:26:19,417 ] 106 root - INFO - Preprocessor pickle file saved

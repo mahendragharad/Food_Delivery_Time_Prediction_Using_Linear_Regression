@@ -1,0 +1,6 @@
+[ 2024-07-06 00:42:35,391 ] 23 root - INFO - Logger has been configured and is working properly.
+[ 2024-07-06 00:42:40,524 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-07-06 00:42:40,531 ] 97 werkzeug - INFO -  * Debugger PIN: 597-376-328
+[ 2024-07-06 00:42:45,267 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 00:42:45] "GET /predict HTTP/1.1" 200 -
+[ 2024-07-06 00:42:49,684 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 00:42:49] "GET /predict HTTP/1.1" 200 -
+[ 2024-07-06 00:45:06,381 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Projects\\ALL_Data_SCIENCE_Projects\\Food_Delivery_Time_Prediction\\application.py', reloading

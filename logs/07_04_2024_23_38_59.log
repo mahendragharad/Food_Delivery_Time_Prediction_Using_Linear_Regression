@@ -1,0 +1,8 @@
+[ 2024-07-04 23:38:59,761 ] 23 root - INFO - Logger has been configured and is working properly.
+[ 2024-07-04 23:39:02,420 ] 27 root - INFO - Data ingestion methods starts
+[ 2024-07-04 23:39:02,533 ] 31 root - INFO - Dataset read as pandas dataframe
+[ 2024-07-04 23:39:02,533 ] 33 root - INFO - Making directory path to save our raw data file
+[ 2024-07-04 23:39:02,534 ] 35 root - INFO - raw data path created successfully
+[ 2024-07-04 23:39:02,534 ] 37 root - INFO - converting our raw data file into df and saving it to the raw file directory
+[ 2024-07-04 23:39:03,020 ] 40 root - INFO - Let's Do the train test split
+[ 2024-07-04 23:39:03,560 ] 46 root - INFO - Data Ingestion Step Completed

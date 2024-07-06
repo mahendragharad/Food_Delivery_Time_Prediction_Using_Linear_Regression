@@ -1,0 +1,4 @@
+[ 2024-07-06 00:45:08,150 ] 23 root - INFO - Logger has been configured and is working properly.
+[ 2024-07-06 00:45:13,202 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-07-06 00:45:13,208 ] 97 werkzeug - INFO -  * Debugger PIN: 597-376-328
+[ 2024-07-06 00:45:16,961 ] 97 werkzeug - INFO -  * Detected change in 'C:\\Projects\\ALL_Data_SCIENCE_Projects\\Food_Delivery_Time_Prediction\\application.py', reloading

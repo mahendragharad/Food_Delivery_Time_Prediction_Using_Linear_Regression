@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delivery Time Prediction</title>
+    <link rel="icon" href="{{ url_for('static', filename='icons8-favicon-64.png') }}" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #090202, #002d5e);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        form {
+            max-width: 505px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 42 39px 25px rgba(0, 0, 0, 0.2);
+            background: transparent;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            width: 100%;
+            color: white;
+        }
+
+        input[type="text"],
+        select {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            min-width: 220px;
+        }
+
+        input[type="text"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #0072ff;
+            box-shadow: 0 0 5px rgba(0, 114, 255, 0.5);
+        }
+
+        select {
+            height: 44px;
+        }
+
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #095eb9;
+        }
+    </style>
+</head>
+<body>
+    <h1>DELIVERY TIME PREDICTION</h1>
+    <form action="{{url_for('predict_datapoints')}}" method="POST">
+        <div class="form-group">
+            <label for="Delivery_person_Age">Delivery Person Age:</label>
+            <input type="text" id="Delivery_person_Age" name="Delivery_person_Age" placeholder="Enter delivery person age (integer)">
+        
+            <label for="Delivery_person_Ratings">Delivery Person Ratings:</label>
+            <input type="text" id="Delivery_person_Ratings" name="Delivery_person_Ratings" placeholder="Enter delivery person ratings (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="Restaurant_latitude">Restaurant Latitude:</label>
+            <input type="text" id="Restaurant_latitude" name="Restaurant_latitude" placeholder="Enter restaurant latitude (float)">
+        
+            <label for="Restaurant_longitude">Restaurant Longitude:</label>
+            <input type="text" id="Restaurant_longitude" name="Restaurant_longitude" placeholder="Enter restaurant longitude (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="Delivery_location_latitude">Delivery Location Latitude:</label>
+            <input type="text" id="Delivery_location_latitude" name="Delivery_location_latitude" placeholder="Enter delivery location latitude (float)">
+        
+            <label for="Delivery_location_longitude">Delivery Location Longitude:</label>
+            <input type="text" id="Delivery_location_longitude" name="Delivery_location_longitude" placeholder="Enter delivery location longitude (float)">
+        </div>
+
+        <div class="form-group">
+            <label for="Weather_conditions">Weather Conditions:</label>
+            <select id="Weather_conditions" name="Weather_conditions">
+                <option value="Fog">Fog</option>
+                <option value="Stormy">Stormy</option>
+                <option value="Sandstorms">Sandstorms</option>
+                <option value="Windy">Windy</option>
+                <option value="Cloudy">Cloudy</option>
+                <option value="Sunny">Sunny</option>
+            </select>
+        
+            <label for="Road_traffic_density">Road Traffic Density:</label>
+            <select id="Road_traffic_density" name="Road_traffic_density">
+                <option value="Jam">Jam</option>
+                <option value="High">High</option>
+                <option value="Medium">Medium</option>
+                <option value="Low">Low</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="Vehicle_condition">Vehicle Condition:</label>
+            <input type="text" id="Vehicle_condition" name="Vehicle_condition" placeholder="Enter vehicle condition (integer)">
+        
+            <label for="Type_of_order">Type of Order:</label>
+            <select id="Type_of_order" name="Type_of_order">
+                <option value="Snack">Snack</option>
+                <option value="Meal">Meal</option>
+                <option value="Drinks">Drinks</option>
+                <option value="Buffet">Buffet</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="Type_of_vehicle">Type of Vehicle:</label>
+            <select id="Type_of_vehicle" name="Type_of_vehicle">
+                <option value="motorcycle">Motorcycle</option>
+                <option value="scooter">Scooter</option>
+                <option value="electric_scooter">Electric Scooter</option>
+                <option value="bicycle">Bicycle</option>
+            </select>
+        
+            <label for="multiple_deliveries">Multiple Deliveries:</label>
+            <input type="text" id="multiple_deliveries" name="multiple_deliveries" placeholder="Enter multiple deliveries (integer)">
+        </div>
+
+        <div class="form-group">
+            <label for="Festival">Festival:</label>
+            <select id="Festival" name="Festival">
+                <option value="No">No</option>
+                <option value="Yes">Yes</option>
+            </select>
+        
+            <label for="City">City:</label>
+            <select id="City" name="City">
+                <option value="Metropolitian">Metropolitian</option>
+                <option value="Urban">Urban</option>
+                <option value="Semi-Urban">Semi-Urban</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="Day">Day:</label>
+            <input type="text" id="Day" name="Day" placeholder="Enter day (integer)">
+        
+            <label for="Month">Month:</label>
+            <input type="text" id="Month" name="Month" placeholder="Enter month (integer)">
+        
+            <label for="Year">Year:</label>
+            <input type="text" id="Year" name="Year" placeholder="Enter year (integer)">
+        </div>
+
+        <div class="form-group">
+            <label for="orderd_hours">Ordered Hours:</label>
+            <input type="text" id="orderd_hours" name="orderd_hours" placeholder="Enter ordered hours (integer)">
+        
+            <label for="orderd_minutes">Ordered Minutes:</label>
+            <input type="text" id="orderd_minutes" name="orderd_minutes" placeholder="Enter ordered minutes (integer)">
+        </div>
+
+        <div class="form-group">
+            <label for="picked_hours">Picked Hours:</label>
+            <input type="text" id="picked_hours" name="picked_hours" placeholder="Enter picked hours (integer)">
+        
+            <label for="picked_minutes">Picked Minutes:</label>
+            <input type="text" id="picked_minutes" name="picked_minutes" placeholder="Enter picked minutes (integer)">
+        </div>
+
+        <input type="submit" value="Predict Delivery Time">
+    </form>
+</body>
+</html>

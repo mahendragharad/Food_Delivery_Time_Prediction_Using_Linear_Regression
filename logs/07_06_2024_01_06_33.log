@@ -1,0 +1,8 @@
+[ 2024-07-06 01:06:33,825 ] 23 root - INFO - Logger has been configured and is working properly.
+[ 2024-07-06 01:06:38,833 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2024-07-06 01:06:38,839 ] 97 werkzeug - INFO -  * Debugger PIN: 597-376-328
+[ 2024-07-06 01:06:47,949 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 01:06:47] "GET /predict HTTP/1.1" 200 -
+[ 2024-07-06 01:06:54,233 ] 105 root - INFO - Dataframe Gathered
+[ 2024-07-06 01:06:55,517 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 01:06:55] "POST /predict HTTP/1.1" 200 -
+[ 2024-07-06 01:09:27,960 ] 105 root - INFO - Dataframe Gathered
+[ 2024-07-06 01:09:28,042 ] 97 werkzeug - INFO - 127.0.0.1 - - [06/Jul/2024 01:09:28] "POST /predict HTTP/1.1" 200 -
